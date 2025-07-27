@@ -97,7 +97,7 @@ button:focus {
 outline: none;
 }
 .button-add {
-  width: 100px; /* was 70px */
+  width: 100px; 
   padding: 15px;
   font-size: 18px;
   border-radius: 10px;
@@ -105,4 +105,40 @@ outline: none;
   background-color: #f1af71;
   cursor: pointer;
   white-space: nowrap; /* Prevent text from wrapping */
+}
+
+@media (max-width: 600px) {
+  .app-wrapper {
+    min-width: 90%;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .task-input {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .button-add {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .button-complete,
+  .button-delete,
+  .button-edit {
+    font-size: 24px;
+    margin-right: 10px;
+  }
 }
